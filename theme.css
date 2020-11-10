@@ -1,0 +1,99 @@
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+body {
+     background: linear-gradient(to bottom, rgba(69, 77, 84) 0%, rgba(52, 58, 64) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#Gain{font-family:Georgia, "Times New Roman", Times, serif;}
+
+#Gain {
+	padding: 45px 0;
+}
+#Gain .title {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#Gain .title h3 {
+	font: 500 26px/115% 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Gain .title p {
+	font: 400 16px/155% 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Gain .each-icon {
+	background-color: #111111;
+	min-height: 450px;
+	text-align: center;	
+	cursor: pointer;
+	position: relative;
+}
+#Gain .each-icon .icon-wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+#Gain .each-icon .icon-wrap i {
+	color: #00ffff;
+	font-size: 100px;
+}
+#Gain .each-icon .icon-text {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: left;
+	transition: all 0.5s;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#Gain .each-icon .icon-text h3 {
+	color: #00ffff;
+	margin: 0 0 15px;
+	font: 700 20px/115% 'Open Sans', sans-serif;
+}
+#Gain .each-icon .icon-text p {
+	color: #fff;
+	margin: 0 0 15px;
+	font: 400 18px/115% 'Open Sans', sans-serif;
+}
+#Gain .each-icon .icon-text .cta a {
+	color: #fff;
+	display: inline-block;
+}
+#Gain .each-icon .icon-text .cta i {
+	color: #fff;
+	font-size: 25px;
+	position: relative;
+	left: -15px;
+	transition: all 0.3s;
+}
+#Gain .each-icon:hover .icon-text .cta a i {
+	opacity: 1;
+	left: 0;
+	transition: all 0.3s;
+}
+#Gain .each-icon .icon-text .cta a:hover i {
+	color: #006f65;
+}
+#Gain .each-icon:hover .icon-wrap {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+#Gain .each-icon:hover .icon-text {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.5s;
+}
