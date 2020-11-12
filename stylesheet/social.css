@@ -44,10 +44,11 @@
 .social ul li.sskyworms-facebook:hover{
     background-color: transparent;
 }
-.social ul li p{
-    color: transparent;
+.social ul li a{
+    color: white;
     margin: 5px;
     margin-left:2px; 
+	animation: colorRotate 6s linear 0s infinite;
 }
 
 .social ul li i{
