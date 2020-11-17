@@ -1,40 +1,17 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Test</title>	
-    <script type="text/javascript" src="../js/js-1.js"></script>	
-    <script type="text/javascript" src="../js/js-2.js"></script>
-	<script type="text/javascript" src="../js/js-3.js"></script>	
-	<link href="../stylesheet/carousel-1.css" rel="stylesheet" type="text/css" />		
-	<link href="../stylesheet/carousel-1.css" rel="stylesheet" type="text/css" />	
-	<link href="../stylesheet/test.css" rel="stylesheet" type="text/css" />
-	<title>World Core</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="../stylesheet/social.css">
-	<link rel="stylesheet" href="../stylesheet/theme.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
-	<script src="https://kit.fontawesome.com/89b46f4376.js" crossorigin="anonymous"></script>
-	<link rel="shortcut icon" type="image/png" href="./images/icon.png">
-	<nav class="social">
-        <ul class="animated-text">
-            <li class="server-page">
-                <i class= "fa fa-facebook" aria-hidden="true"></i>
-                <a class="rainbow" style="text-decoration:none" href="https://www.facebook.com/thien.trankhieu/">&nbsp;&nbsp;&nbsp;Server Fanpage</a>
-			<li class="server-group">
-                <i class= "fa fa-facebook" aria-hidden="true"></i>
-                <a class="rainbow" style="text-decoration:none" href="https://www.facebook.com/thien.trankhieu/">&nbsp;&nbsp;&nbsp;Server Group</a>
-			<li class="sskyworms-facebook">
-                <i class= "fa fa-facebook" aria-hidden="true"></i>
-                <a class="rainbow" style="text-decoration:none" href="https://www.facebook.com/thien.trankhieu/">&nbsp;&nbsp;&nbsp;SskyWorms</a>
-        </ul>
-    </nav>
+	<title>jQuery Carousel 2 Sides Slider Plugin</title>	
+    <script type="text/javascript" src="https://previews.customer.envatousercontent.com/files/30037444/js/jquery-1.7.2.min.js"></script>	
+    <script type="text/javascript" src="https://previews.customer.envatousercontent.com/files/30037444/js/jquery.roundabout.min.js"></script>	
+    <script type="text/javascript" src="https://previews.customer.envatousercontent.com/files/30037444/js/jquery.carouselslider.min.js"></script>	
+	<link href="https://previews.customer.envatousercontent.com/files/30037444/css/animation.css" rel="stylesheet" type="text/css" />		
+	<link href="https://previews.customer.envatousercontent.com/files/30037444/css/style.css" rel="stylesheet" type="text/css" />
+
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function(){
 			$('#carouel1').carouselSlider({
@@ -70,122 +47,76 @@
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-transparent static-top">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-			<img src = "../images/logo.png" style="width:120px;height:120px;">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li>
-						<a class="nav-link" href="../WorldCore.html">Trang chủ
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="Jobs.html">Chức  nghiệp</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Items.html">Vật phẩm</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Dungeons.html">Hầm ngục</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Others.html">Chức năng khác</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	</header>
-      <section class="main_full banner_section_top">
-        <div class="container-fluid">
-          <div class="row">
-             <div class="full">
-                  <div class="slider_banner">
-                    <img class="img-responsive" src="../images/a.png" alt="#" />
-                      <div class="slide_cont">
-                        <div class="slider_cont_inner">
-                        </div>
-                      </div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </section>
-	<br>
 	<div id="wrap">
+    <h3 class="exampleTitle1">Example 1</h3>
 	<ul id="carouel1">
 		<li>
 			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;""/>
+				<img src="../images/a.png" />
 			</div>
+
+			<div class="back">
+				<h4><a href="http://activeden.net/user/sike" class="butt">Visit My Profile</a></h4>
+				<p>This is the back div container. You can put other content here.</p>
+				<p>The arrow buttons is optional.</p>				
+				<p>You can trigger this container by <strong>click</strong> or <strong>hover</strong>.</p>								
+				<p>Support auto delay slideshow, paused when user hover.</p>								
+			</div>
+			
 		</li>
 		<li>			
 			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;"/>
+				<img src="../images/a.png" />
+			</div>
+			<div class="back">
+				<img src="../images/a.png" class="smallImg" />
+				<h4 class="caption">
+					Put the image caption here.
+				</h4>
+				<p class="caption">				
+					This is the back div container. You can put any content here.										
+					<a href="http://codecanyon.net/user/sike/">A link here</a>, consectetur adipisicing elit, sed do eiusmod tempor , quis nostrud exercitation ullamco laboris nisi proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>				
+				<p class="caption">			
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute olore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>						
+				<p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate  mollit anim id est laborum.
+				</p>		
+			</div>
+			
+		</li>
+		<li>
+			<div class="front">
+				<img src="../images/a.png" />
+			</div>
+			<div class="back">
+				<img src="../images/a.png" />
 			</div>
 		</li>
 		<li>
 			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;"/>
+				<h4>This is the title</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="http://codecanyon.net/user/sike">Visit my profile</a> ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="back">			
+				<img src="../images/a.png" />
 			</div>
 		</li>
 		<li>
 			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;"/>
-			</div>
-		</li>
-		<li>
-			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;"/>
+				<img src="../images/a.png" />
 			</div>			
 		</li>
 		<li>
 			<div class="front">
-				<img src="../images/test.png" style="max-width:100%;height:auto;"/>
+				<img src="../images/a.png" />
 			</div>			
 		</li>		
 	</ul>	
-	</div>
-	<br>
-	<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6">
-					<h6>Về World Core</h6>
-					<a class="text-justify">Là một máy chủ RPG thuộc <a href="http://3fmc.com">3fmc.com</a> với những tính năng độc đáo như chức nghiệp, hầm ngục, trang bị đa dạng cùng với đội ngũ quản trị chuyên nghiệp có thể giúp bạn ngay lập tức nếu họ có trong máy chủ</a>
-				</div>
-				<div class="col-xs-6 col-md-3">
-					<h6>Về Fight For Fap</h6>
-					<a class="text-justify">Là một cụm máy chủ có tuổi đời từ năm 2014. Fight For Fap có rất nhiều thể loại máy chủ đa dạng từ Bedwar, Faction, ... </a>
-				</div>
-				<div class="col-xs-6 col-md-3">
-					<h6>Liên hệ</h6>
-					<ul class="footer-links">
-						<li><a href="https://www.facebook.com/thien.trankhieu/">Tố cáo quản trị viên</a></li>
-						<li><a href="https://www.facebook.com/thien.trankhieu/">Tố cáo thành viên</a></li>
-						<li><a href="https://www.facebook.com/thien.trankhieu/">Góp ý</a></li>
-						<li><a href="https://www.facebook.com/thien.trankhieu/">Báo cáo lỗi</a></li>
-					</ul>
-				</div>
-			</div>
-    <hr>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-sm-6 col-xs-12">
-					<p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-					<a href="https://www.facebook.com/thien.trankhieu/">SskyWorms</a>.
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+		
+
+
+	</div><!-- #wrap -->	
 </body>
 </html>

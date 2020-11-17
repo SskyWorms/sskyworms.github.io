@@ -1,0 +1,52 @@
+.header-site-card {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+.header-site-card .logo {
+    z-index: 999;
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.header-site-card nav {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+.header-site-card nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+.header-site-card nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+.header-site-card nav ul li a {
+    text-decoration: none;
+    color: #808080;
+    font-size: 16px;
+}
+
+.header-site-card nav div ul li a.active {
+    text-decoration: none;
+    color: #FFFAF0;
+    font-size: 16px;
+}
