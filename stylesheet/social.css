@@ -49,6 +49,10 @@
     background-color: transparent;
 }
 
+.social ul li.sskyworms-github:hover {
+    background-color: transparent;
+}
+
 .social ul li a {
     color: white;
     margin: 5px;
