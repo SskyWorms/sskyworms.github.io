@@ -1,0 +1,37 @@
+#templatemo_about .row {
+    margin-top: 30px;
+}
+
+#templatemo_about h2 {
+    font: normal normal normal 24px/24px 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0 0 15px 0;
+    color: white;
+}
+
+#templatemo_about img {
+    float: left;
+    max-width: 98%;
+    margin: 0 2% 2% 0;
+}
+
+#templatemo_about p {
+    font: normal normal normal 14px/30px 'Century Gothic', sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: rgb(184, 184, 184);
+}
+
+#templatemo_about hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+#templatemo_about ul li a {
+    color: white;
+}
+
+.clear {
+    clear: both;
+}

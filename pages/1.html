@@ -8,17 +8,22 @@
     <meta name="title" content="World Core" />
     <meta name="description" content="Máy chủ World Core" />
     <meta name="google" content="notranslate" />
-    <link rel="shortcut icon" type="../image/png" href="../images/icon.png" />
+    <link rel="shortcut icon" type="image/png" href="../images/icon.png" />
 
     <link rel="stylesheet" href="../stylesheet/social.css" />
     <link rel="stylesheet" href="../stylesheet/theme.css" />
     <link rel="stylesheet" href="../stylesheet/dropdown.css" />
     <link rel="stylesheet" href="../stylesheet/header-site.css" />
     <link rel="stylesheet" href="../stylesheet/footer-site.css" />
-    <link rel="stylesheet" href="../stylesheet/main-info-site.css" />
+    <link rel="stylesheet" href="../stylesheet/gallery-site.css" />
+    <link rel="stylesheet" href="../stylesheet/return-top.css" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/89b46f4376.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="../js/carouseljquery.js"></script>
     <script type="text/javascript" src="https://previews.customer.envatousercontent.com/files/30037444/js/jquery.roundabout.min.js"></script>
@@ -55,14 +60,10 @@
             });
         });
     </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/89b46f4376.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header-site-card">
+    <header id="top" class="header-site-card">
         <div class="wrapper">
             <nav>
                 <div class="logo">
@@ -70,13 +71,13 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a class="dropdown-text" href="#">Trang chủ</a></li>
+                        <li><a class="dropdown-text" href="../WorldCore.html">Trang chủ</a></li>
                         <li>
                             <div class="dropdown">
-                                <button class="dropbtn"><a class="dropdown-text" href="../pages/Jobs.html">Chức nghiệp</a></button>
+                                <button class="dropbtn"><a class="dropdown-text active" href="../pages/Jobs.html">Chức nghiệp</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Combat</a>
-                                    <a href="#">Professions</a>
+                                    <a href="#all-jobs">All Jobs</a>
+                                    <a href="#player-stats">All Stats</a>
                                 </div>
                             </div>
                         </li>
@@ -84,9 +85,10 @@
                             <div class="dropdown">
                                 <button class="dropbtn"><a class="dropdown-text" href="../pages/Items.html">Vật phẩm</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
+                                    <a href="#">Normal</a>
+                                    <a href="#">Advanced</a>
+                                    <a href="#">Legendary</a>
+                                    <a href="#">Epic</a>
                                 </div>
                             </div>
                         </li>
@@ -94,9 +96,9 @@
                             <div class="dropdown">
                                 <button class="dropbtn"><a class="dropdown-text" href="../pages/Dungeons.html">Hầm ngục</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
+                                    <a href="#">Normal</a>
+                                    <a href="#">Wave</a>
+                                    <a href="#">Soon</a>
                                 </div>
                             </div>
                         </li>
@@ -104,9 +106,9 @@
                             <div class="dropdown">
                                 <button class="dropbtn"><a class="dropdown-text" href="../pages/Ranks.html">Cấp bậc VIP</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
+                                    <a href="#">Coin</a>
+                                    <a href="#">Money</a>
+                                    <a href="#">Event</a>
                                 </div>
                             </div>
                         </li>
@@ -114,9 +116,9 @@
                             <div class="dropdown">
                                 <button class="dropbtn"><a class="dropdown-text" href="../pages/Others.html">Chức năng khác</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 1</a>
+                                    <a href="#">Soon</a>
+                                    <a href="#">Soon</a>
+                                    <a href="#">Soon</a>
                                 </div>
                             </div>
                         </li>
@@ -143,7 +145,6 @@
             </li>
         </ul>
     </div>
-    <br />
     <br />
     <br />
     <div id="wrap">
@@ -285,7 +286,482 @@
             </li>
         </ul>
     </div>
-    <!-- #wrap -->
+    <hr id="all-jobs">
+    <br>
+    <br>
+    <section id="templatemo_about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-farming.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Farming</h2>
+                    <hr>
+                    <p>Chỉ số chính : Máu ( Health )</p>
+                    <p>Chỉ số phụ : Sức mạnh ( Strength )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Farming</strong> khi thu hoạch nông sản</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Bountiful Harvest</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x2 sản lượng nông sản</p>
+                        <li><a>Farmer</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Farming</strong> nhận được</p>
+                        <li><a>Sycthe Master</a></li>
+                        <p>Tăng sát thương gây ra từ lưỡi hái / cuốc</p>
+                        <li><a>Geneticist</a></li>
+                        <p>Tăng lượng bão hòa nhận được khi ăn nông sản</p>
+                        <li><a>Triple Harvest</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x3 sản lượng nông sản</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Replenish</a>
+                            <p>Sau khi kích hoạt sẽ giúp bạn tự động trồng lại nông sản</p>
+                            <p>trong vài giây ( tăng theo cấp )</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-mining.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Mining</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức bền ( Toughness )</p>
+                    <p>Chỉ số phụ : May mắn ( Luck )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Mining</strong> khi đào đá / quặng</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Lucky Miner</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x2 sản lượng đá / quặng</p>
+                        <li><a>Miner</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Mining</strong> nhận được</p>
+                        <li><a>Pick Master</a></li>
+                        <p>Tăng sát thương gây ra từ cúp / búa</p>
+                        <li><a>Stamina</a></li>
+                        <p>Tăng thêm chỉ số Toughness ( Sức bền ) khi bạn cầm cúp / búa</p>
+                        <li><a>Hardened Armor</a></li>
+                        <p>Cho bạn tỉ lệ bỏ qua thiệt hại lên giáp khi bị tấn công</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Speed Miner</a>
+                            <p>Sau khi kích hoạt sẽ cho bạn hiệu ứng Haste ( Đào nhanh )</p>
+                            <p>trong vài giây ( tăng theo cấp )</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-foraging.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Foraging</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức mạnh ( Strength )</p>
+                    <p>Chỉ số phụ : Sức bền ( Toughness )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Foraging</strong> khi chặt cây</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Lumberjack</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x2 sản lượng gỗ</p>
+                        <li><a>Forager</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Foraging</strong> nhận được</p>
+                        <li><a>Axe Master</a></li>
+                        <p>Tăng sát thương gây ra từ rìu</p>
+                        <li><a>Valor</a></li>
+                        <p>Tăng thêm chỉ số Strength ( Sức mạnh ) khi bạn cầm rìu</p>
+                        <li><a>Shredder</a></li>
+                        <p>Cho bạn tỉ lệ gây ra thiệt hại x3 lên giáp đối thủ</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Tree Capitator</a>
+                            <p>Sau khi kích hoạt sẽ giúp bạn chặt nguyên cây thay vì 1 khối</p>
+                            <p>trong vài giây ( tăng theo cấp )</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-excavation.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Excavating</h2>
+                    <hr>
+                    <p>Chỉ số chính : Hồi phục ( Regeneration )</p>
+                    <p>Chỉ số phụ : May mắn ( Luck )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Excavating</strong> khi đào đất</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Metal Detector</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch được khoáng sản khi đào đất</p>
+                        <li><a>Excavator</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Excavating</strong> nhận được</p>
+                        <li><a>Spade Master</a></li>
+                        <p>Tăng sát thương gây ra từ xẻng / giáo</p>
+                        <li><a>Bigger Scoop</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x3 sản lượng khi đào đất</p>
+                        <li><a>Lucky Spades</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch được đồ quý hiếm khi đào đất</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-fishing.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Fishing</h2>
+                    <hr>
+                    <p>Chỉ số chính : May mắn ( Luck )</p>
+                    <p>Chỉ số phụ : Máu ( Health )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Fishing</strong> khi câu cá</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Lucky Catch</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch x2 sản lượng cá</p>
+                        <li><a>Fisher</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Fishing</strong> nhận được</p>
+                        <li><a>Treasure Hunter</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch được kho báu khi câu cá</p>
+                        <li><a>Grappler</a></li>
+                        <p>Tăng tốc độ kéo lại của cần câu (<a href="https://www.youtube.com/watch?v=9YpIJiB4wF4">?</a>)</p>
+                        <li><a>Epic Catch</a></li>
+                        <p>Cho bạn tỉ lệ thu hoạch được đồ quý hiếm khi câu cá</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-forging.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Forging</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức bền ( Toughness )</p>
+                    <p>Chỉ số phụ : Máu ( Health )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Forging</strong> khi gộp hoặc ép sách trong đe</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a></li>
+                        <p>Chưa ra mắt</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-enchanting.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Enchanting</h2>
+                    <hr>
+                    <p>Chỉ số chính : Trí lực ( Wisdom )</p>
+                    <p>Chỉ số phụ : May mắn ( Luck )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Enchanting</strong> khi cường hóa vật phẩm / sách</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a></li>
+                        <p>Chưa ra mắt</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-alchemy.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Alchemy</h2>
+                    <hr>
+                    <p>Chỉ số chính : Máu ( Heath )</p>
+                    <p>Chỉ số phụ : Trí lực ( Wisdom )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Alchemy</strong> khi nấu thuốc</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Alchemist</a></li>
+                        <p>Tăng thời gian tác dụng của thuốc bạn nấu</p>
+                        <li><a>Brewer</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Alchemny</strong> nhận được</p>
+                        <li><a>Splasher</a></li>
+                        <p>Tăng thời gian tác dụng của thuốc ném ra với mỗi người dính phải</p>
+                        <li><a>Lingering</a></li>
+                        <p>Tăng thời gian tồn tại của thuốc Lingerring với mỗi người dính phải</p>
+                        <li><a>Wise Effect</a></li>
+                        <p>Tăng thêm chỉ số Wisdom ( Trí lực ) với mỗi hiệu ứng trên người bạn</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-combat.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Fighting</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức mạnh ( Strength )</p>
+                    <p>Chỉ số phụ : Hồi phục ( Regeneration )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Fighting</strong> khi Pvp / Pve cận chiến ( đánh quái / người )</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Critical Damage</a></li>
+                        <p>Tăng sát thương chí mạng khi dùng kiếm</p>
+                        <li><a>Fighter</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Fighting</strong> nhận được</p>
+                        <li><a>Sword Master</a></li>
+                        <p>Tăng sát thương gây ra từ kiếm / dao găm / đại đao / ... ( có liên quan tới kiếm )</p>
+                        <li><a>First Strike</a></li>
+                        <p>Gây thêm sát thương ở đòn đánh đầu tiên</p>
+                        <li><a>Bleed</a></li>
+                        <p>Có tỉ lệ gây chảy máu đối thủ</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-archery.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Archery</h2>
+                    <hr>
+                    <p>Chỉ số chính : May mắn ( Luck )</p>
+                    <p>Chỉ số phụ : Sức mạnh ( Strength )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Archery</strong> khi Pvp / Pve tầm xa ( đánh quái / người )</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Critical Chance</a></li>
+                        <p>Tăng tỉ lệ chí mạng khi dùng cung</p>
+                        <li><a>Archer</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Archery</strong> nhận được</p>
+                        <li><a>Bow Master</a></li>
+                        <p>Tăng sát thương gây ra từ cung / nỏ / ... ( có liên quan tới cung )</p>
+                        <li><a>Piercing</a></li>
+                        <p>Có tỉ lệ bắn xuyên quái</p>
+                        <li><a>Stun</a></li>
+                        <p>Có tỉ lệ giảm tốc của đối thủ bị bắn trúng</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-sorcery.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Sorcery</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức mạnh ( Strength )</p>
+                    <p>Chỉ số phụ : Trí lực ( Wisdom )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Sorcery</strong> khi dùng kĩ năng kích hoạt</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a></li>
+                        <p>Chưa ra mắt</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-agility.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Agility</h2>
+                    <hr>
+                    <p>Chỉ số chính : Trí lực ( Wisdom )</p>
+                    <p>Chỉ số phụ : Hồi phục ( Regeneration )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Agility</strong> khi nhảy và nhận sát thương rơi</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Light Fall</a></li>
+                        <p>Giảm sát thương khi rơi</p>
+                        <li><a>Jumper</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Agility</strong> nhận được</p>
+                        <li><a>Sugar Rush</a></li>
+                        <p>Tăng thời gian tác dụng của thuốc Nhảy cao và Chạy nhanh</p>
+                        <li><a>Fleeting</a></li>
+                        <p>Nhận thêm tốc độ di chuyển khi còn ít máu</p>
+                        <li><a>Thunder Fall</a></li>
+                        <p>Khi giữ Shift khi rơi có tỉ lệ gây sát thương cho các vật thể xung quanh bản thân 3 khối</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-defense.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Defense</h2>
+                    <hr>
+                    <p>Chỉ số chính : Sức bền ( Toughness )</p>
+                    <p>Chỉ số phụ : Máu ( Health )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Defense</strong> khi nhảy và nhận sát thương rơi</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Shielding</a></li>
+                        <p>Giảm sát thương nhận vào khi đang giữ Shift</p>
+                        <li><a>Defender</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Defense</strong> nhận được</p>
+                        <li><a>Mob Master</a></li>
+                        <p>Giảm sát thương nhận vào từ quái</p>
+                        <li><a>Immunity</a></li>
+                        <p>Bản thân có tỉ lệ kháng sát thương nhận vào</p>
+                        <li><a>No Debuff</a></li>
+                        <p>Bản thân có tỉ lệ xóa bỏ hiệu ứng xấu khi vừa nhận được</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Absorption</a>
+                            <p>Sau khi kích hoạt sẽ giúp bạn hồi máu theo 50% sát thương nhận vào</p>
+                            <p>trong vài giây ( tăng theo cấp )</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-endurance.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Endurance</h2>
+                    <hr>
+                    <p>Chỉ số chính : Hồi phục ( Regeneration )</p>
+                    <p>Chỉ số phụ : Sức bền ( Toughness )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Endurance</strong> khi chạy và nhảy</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Anti Hunger</a></li>
+                        <p>Có tỉ lệ không làm bản thân mất thanh đói</p>
+                        <li><a>Runner</a></li>
+                        <p>Tăng cho bạn lượng kinh nghiệm <strong>Endurance</strong> nhận được</p>
+                        <li><a>Golden Heal</a></li>
+                        <p>Tăng lượng máu hồi phục nhận được từ hiệu ứng</p>
+                        <li><a>Recovery</a></li>
+                        <p>Tăng lượng máu hồi phục tự nhiên khi còn ít máu</p>
+                        <li><a>Meal Steal</a></li>
+                        <p>Có tỉ lệ cướp 1 điểm thức ăn khi tấn công đối thủ</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-7 col-xs-24">
+                    <img src="../images/icon-healing.png" width="190px" height="190px" />
+                </div>
+                <div class="col-md-16">
+                    <h2>Chức nghiệp Healing</h2>
+                    <hr>
+                    <p>Chỉ số chính : Hồi phục ( Regeneration )</p>
+                    <p>Chỉ số phụ : Máu ( Health )</p>
+                    <hr>
+                    <p>Bạn sẽ nhận được kinh nghiệm <strong>Healing</strong> khi dùng thuốc</p>
+                    <p>Chức nghiệp cũng giúp bạn có thêm các kĩ năng nội tại như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a></li>
+                        <p>Chưa ra mắt</p>
+                    </ul>
+                    <p>Ngoài ra bạn còn nhận thêm kĩ năng kích hoạt như :</p>
+                    <ul>
+                        <li><a>Chưa ra mắt</a>
+                            <p>Chưa ra mắt</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+    </section>
+    <br>
+    <br>
+    <hr>
     <footer class="footer-site-card">
         <div class="container">
             <div class="row">
@@ -320,6 +796,9 @@
             </div>
         </div>
     </footer>
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
 </body>
 
 </html>
