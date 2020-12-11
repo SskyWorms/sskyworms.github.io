@@ -1,13 +1,115 @@
-header {
-    width: 100%;
-    height: 50%;
-    background: url('../images/background.jpg') no-repeat 50% 50%;
-    background-size: cover;
+/*===============================================
+|                                               |
+| Background                                    |
+|                                               |
+===============================================*/
+
+#top-head .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
+
+#top-head .stars {
+    background: black url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png") repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+#top-head .twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    -moz-animation: move-background 70s linear infinite;
+    -ms-animation: move-background 70s linear infinite;
+    -o-animation: move-background 70s linear infinite;
+    -webkit-animation: move-background 70s linear infinite;
+    animation: move-background 70s linear infinite;
+}
+
+#top-head img {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
+
+
+/*===============================================
+|                                               |
+| Animated Scrolling Path                       |
+|                                               |
+===============================================*/
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animated-scrollbar 5s linear infinite;
+    z-index: 999;
+}
+
+#progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+
+/*===============================================
+|                                               |
+| Main                                          |
+|                                               |
+===============================================*/
 
 html,
 body {
-    background: linear-gradient(to bottom, rgba(69, 77, 84) 0%, rgba(52, 58, 64) 100%);
+    background: linear-gradient(to bottom, rgba(38, 38, 38) 0%, rgba(38, 38, 38) 100%);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -18,6 +120,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body hr {

@@ -1,0 +1,115 @@
+/*===============================================
+|                                               |
+| Animated Scrolling Keyfarme                   |
+|                                               |
+===============================================*/
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@keyframes animated-scrollbar {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+/*===============================================
+|                                               |
+| Color Rotate Keyframe                         |
+|                                               |
+===============================================*/
+
+@keyframes colorRotate {
+    from {
+        color: #6666ff;
+    }
+    10% {
+        color: #0099ff;
+    }
+    50% {
+        color: #00ff00;
+    }
+    75% {
+        color: #ff3399;
+    }
+    100% {
+        color: #6666ff;
+    }
+}
+
+
+/*===============================================
+|                                               |
+| Border Rotate Keyframe                        |
+|                                               |
+===============================================*/
+
+@keyframes borderRotate {
+    from {
+        border: 1px solid #6666ff;
+    }
+    10% {
+        border: 1px solid #0099ff;
+    }
+    50% {
+        border: 1px solid #00ff00;
+    }
+    75% {
+        border: 1px solid #ff3399;
+    }
+    100% {
+        border: 1px solid #6666ff;
+    }
+}
+
+
+/*===============================================
+|                                               |
+| Smooth Scrolling                              |
+|                                               |
+===============================================*/
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+        scroll-behavior: smooth;
+    }
+}

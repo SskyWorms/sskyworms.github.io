@@ -1,0 +1,233 @@
+#job-info-site-1 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 100vh;
+}
+
+#job-info-site-1 .tabs {
+    position: relative;
+    margin-top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+}
+
+#job-info-site-1 .tabs input {
+    position: absolute;
+    z-index: 1000;
+    width: 125px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+#job-info-site-1 .tabs label {
+    background: lightgray;
+    font-size: 10px;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0 20px;
+    float: left;
+    display: block;
+    width: 120px;
+    color: #385c5b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
+}
+
+#job-info-site-1 .tabs label:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+#job-info-site-1 .tabs input:hover+label {
+    background: white;
+}
+
+#job-info-site-1 .clear-shadow {
+    clear: both;
+}
+
+
+/*============================================================================================================================
+  Tabs Content*/
+
+#job-info-site-1 .content {
+    background: rgba(52, 58, 64);
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 10;
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.content div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity linear 0.1s;
+    -moz-transition: opacity linear 0.1s;
+    -o-transition: opacity linear 0.1s;
+    -ms-transition: opacity linear 0.1s;
+    transition: opacity linear 0.1s;
+}
+
+#job-info-site-1 .content div img {
+    position: relative;
+    top: -530px;
+    right: -550px;
+    width: 300px;
+    height: 500px;
+}
+
+#job-info-site-1 .content div h1,
+#job-info-site-1 .content div h2 {
+    color: white;
+    font-size: 18px;
+}
+
+#job-info-site-1 .content div p {
+    font-size: 14px;
+    line-height: 22px;
+    font-style: italic;
+    text-align: left;
+    margin: 0;
+    color: white;
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+}
+
+#job-info-site-1 .content div ul li a {
+    color: white;
+    font-style: bold;
+}
+
+#job-info-site-1 .tabs input.tab-selector-1:checked~.content .content-1,
+.tabs input.tab-selector-2:checked~.content .content-2,
+.tabs input.tab-selector-3:checked~.content .content-3,
+.tabs input.tab-selector-4:checked~.content .content-4,
+.tabs input.tab-selector-5:checked~.content .content-5,
+.tabs input.tab-selector-6:checked~.content .content-6,
+.tabs input.tab-selector-7:checked~.content .content-7,
+.tabs input.tab-selector-8:checked~.content .content-8 {
+    z-index: 100;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transition: opacity ease-out 0.2s 0.1s;
+    -moz-transition: opacity ease-out 0.2s 0.1s;
+    -o-transition: opacity ease-out 0.2s 0.1s;
+    -ms-transition: opacity ease-out 0.2s 0.1s;
+    transition: opacity ease-out 0.2s 0.1s;
+}
+
+
+/*============================================================================================================================*/
+
+
+/*============================================================================================================================
+  Tabs Margin*/
+
+#job-info-site-1 .tabs input#tab-2 {
+    left: 120px;
+}
+
+#job-info-site-1 .tabs input#tab-3 {
+    left: 240px;
+}
+
+#job-info-site-1 .tabs input#tab-4 {
+    left: 360px;
+}
+
+#job-info-site-1 .tabs input#tab-5 {
+    left: 480px;
+}
+
+#job-info-site-1 .tabs input#tab-6 {
+    left: 600px;
+}
+
+#job-info-site-1 .tabs input#tab-7 {
+    left: 720px;
+}
+
+#job-info-site-1 .tabs input#tab-8 {
+    left: 840px;
+}
+
+
+/*============================================================================================================================*/
+
+
+/*============================================================================================================================
+  Tabs Priority*/
+
+#job-info-site-1 .tabs input:checked+label {
+    background: white;
+    z-index: 99;
+}
+
+#job-info-site-1 .tab-label-1 {
+    z-index: 8;
+}
+
+#job-info-site-1 .tab-label-2 {
+    z-index: 7;
+}
+
+#job-info-site-1 .tab-label-3 {
+    z-index: 6;
+}
+
+#job-info-site-1 .tab-label-4 {
+    z-index: 5;
+}
+
+#job-info-site-1 .tab-label-5 {
+    z-index: 4;
+}
+
+#job-info-site-1 .tab-label-6 {
+    z-index: 3;
+}
+
+#job-info-site-1 .tab-label-7 {
+    z-index: 2;
+}
+
+#job-info-site-1 .tab-label-8 {
+    z-index: 1;
+}
+
+
+/*============================================================================================================================*/
